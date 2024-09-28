@@ -19,5 +19,5 @@ async def read_item(item_id: int, q: str | None = None):
         "tax": 1.5
     }
     if q:
-        result.update({"q:": q})
+        result.update({"q": q})
     return result
